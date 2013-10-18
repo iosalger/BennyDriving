@@ -23,6 +23,7 @@
 		0408E5A51810F4B600A8E7B4 /* BennyDrivingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408E5A41810F4B600A8E7B4 /* BennyDrivingTests.m */; };
 		0408E5C11810F57600A8E7B4 /* DriverInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408E5BA1810F57600A8E7B4 /* DriverInfoEntity.m */; };
 		0408E5C31810FEC700A8E7B4 /* 55stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 0408E5C21810FEC700A8E7B4 /* 55stars.png */; };
+		0408E5C61811299700A8E7B4 /* DriverLoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408E5C51811299700A8E7B4 /* DriverLoginInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		0408E5B91810F57600A8E7B4 /* DriverInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverInfoEntity.h; sourceTree = "<group>"; };
 		0408E5BA1810F57600A8E7B4 /* DriverInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverInfoEntity.m; sourceTree = "<group>"; };
 		0408E5C21810FEC700A8E7B4 /* 55stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 55stars.png; sourceTree = "<group>"; };
+		0408E5C41811299700A8E7B4 /* DriverLoginInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverLoginInfo.h; sourceTree = "<group>"; };
+		0408E5C51811299700A8E7B4 /* DriverLoginInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverLoginInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +253,8 @@
 			children = (
 				0408E5B91810F57600A8E7B4 /* DriverInfoEntity.h */,
 				0408E5BA1810F57600A8E7B4 /* DriverInfoEntity.m */,
+				0408E5C41811299700A8E7B4 /* DriverLoginInfo.h */,
+				0408E5C51811299700A8E7B4 /* DriverLoginInfo.m */,
 			);
 			path = com.benny.entity;
 			sourceTree = "<group>";
@@ -395,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0408E5901810F4B600A8E7B4 /* ViewController.m in Sources */,
+				0408E5C61811299700A8E7B4 /* DriverLoginInfo.m in Sources */,
 				0408E58A1810F4B600A8E7B4 /* AppDelegate.m in Sources */,
 				0408E5C11810F57600A8E7B4 /* DriverInfoEntity.m in Sources */,
 				0408E5861810F4B600A8E7B4 /* main.m in Sources */,
