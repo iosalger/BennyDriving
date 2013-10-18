@@ -22,6 +22,7 @@
 		0408E5A31810F4B600A8E7B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0408E5A11810F4B600A8E7B4 /* InfoPlist.strings */; };
 		0408E5A51810F4B600A8E7B4 /* BennyDrivingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408E5A41810F4B600A8E7B4 /* BennyDrivingTests.m */; };
 		0408E5C11810F57600A8E7B4 /* DriverInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408E5BA1810F57600A8E7B4 /* DriverInfoEntity.m */; };
+		0408E5C31810FEC700A8E7B4 /* 55stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 0408E5C21810FEC700A8E7B4 /* 55stars.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		0408E5A41810F4B600A8E7B4 /* BennyDrivingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BennyDrivingTests.m; sourceTree = "<group>"; };
 		0408E5B91810F57600A8E7B4 /* DriverInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverInfoEntity.h; sourceTree = "<group>"; };
 		0408E5BA1810F57600A8E7B4 /* DriverInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverInfoEntity.m; sourceTree = "<group>"; };
+		0408E5C21810FEC700A8E7B4 /* 55stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 55stars.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 		0408E5B01810F57600A8E7B4 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0408E5C21810FEC700A8E7B4 /* 55stars.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0408E5921810F4B600A8E7B4 /* Images.xcassets in Resources */,
+				0408E5C31810FEC700A8E7B4 /* 55stars.png in Resources */,
 				0408E5841810F4B600A8E7B4 /* InfoPlist.strings in Resources */,
 				0408E58D1810F4B600A8E7B4 /* Main.storyboard in Resources */,
 			);
