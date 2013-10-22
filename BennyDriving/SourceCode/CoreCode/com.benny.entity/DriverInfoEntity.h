@@ -4,7 +4,7 @@
 //
 //  Created by Alger on 13-10-18.
 //  Copyright (c) 2013年 Alger. All rights reserved.
-//
+// not useing!
 
 #import <Foundation/Foundation.h>
 
@@ -22,8 +22,11 @@
 @property(nonatomic,retain)NSString * driLiveAddress;//居住地址
 @property(nonatomic,retain)NSString * driEmergencyContactPhone;//紧急联系人电话
 @property(nonatomic,retain)NSString * driEmergencyContactName;//紧急联系人姓名
+@property(nonatomic,assign)NSInteger  driDrivingCount;//司机代驾次数
+@property(nonatomic,assign)NSInteger  driDriverGrade;//司机评级
 
-- (id)init;
+
+- (id) init;
 - (id) initWithDriJobNumber:(NSString *) _driJobNumber
              andDriPhotoURL:(NSString *) _driPhotoURL
                  andDriName:(NSString *) _driName

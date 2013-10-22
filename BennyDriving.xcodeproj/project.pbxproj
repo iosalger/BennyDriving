@@ -24,6 +24,7 @@
 		0408E5C11810F57600A8E7B4 /* DriverInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408E5BA1810F57600A8E7B4 /* DriverInfoEntity.m */; };
 		0408E5C31810FEC700A8E7B4 /* 55stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 0408E5C21810FEC700A8E7B4 /* 55stars.png */; };
 		0408E5C61811299700A8E7B4 /* DriverLoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408E5C51811299700A8E7B4 /* DriverLoginInfo.m */; };
+		0409DA40181674F6008C1F66 /* DriverprotocolSignInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0409DA3F181674F6008C1F66 /* DriverprotocolSignInfoEntity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		0408E5C21810FEC700A8E7B4 /* 55stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 55stars.png; sourceTree = "<group>"; };
 		0408E5C41811299700A8E7B4 /* DriverLoginInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverLoginInfo.h; sourceTree = "<group>"; };
 		0408E5C51811299700A8E7B4 /* DriverLoginInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverLoginInfo.m; sourceTree = "<group>"; };
+		0409DA3E181674F6008C1F66 /* DriverprotocolSignInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverprotocolSignInfoEntity.h; sourceTree = "<group>"; };
+		0409DA3F181674F6008C1F66 /* DriverprotocolSignInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverprotocolSignInfoEntity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +232,7 @@
 		0408E5B61810F57600A8E7B4 /* CoreCode */ = {
 			isa = PBXGroup;
 			children = (
+				0409DA3D18165C10008C1F66 /* com.benny.entity.pub */,
 				0408E5B71810F57600A8E7B4 /* com.benny.control */,
 				0408E5B81810F57600A8E7B4 /* com.benny.entity */,
 				0408E5BB1810F57600A8E7B4 /* com.benny.gps */,
@@ -255,6 +259,8 @@
 				0408E5BA1810F57600A8E7B4 /* DriverInfoEntity.m */,
 				0408E5C41811299700A8E7B4 /* DriverLoginInfo.h */,
 				0408E5C51811299700A8E7B4 /* DriverLoginInfo.m */,
+				0409DA3E181674F6008C1F66 /* DriverprotocolSignInfoEntity.h */,
+				0409DA3F181674F6008C1F66 /* DriverprotocolSignInfoEntity.m */,
 			);
 			path = com.benny.entity;
 			sourceTree = "<group>";
@@ -299,6 +305,13 @@
 			children = (
 			);
 			path = com.benny.ui;
+			sourceTree = "<group>";
+		};
+		0409DA3D18165C10008C1F66 /* com.benny.entity.pub */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = com.benny.entity.pub;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,6 +417,7 @@
 				0408E58A1810F4B600A8E7B4 /* AppDelegate.m in Sources */,
 				0408E5C11810F57600A8E7B4 /* DriverInfoEntity.m in Sources */,
 				0408E5861810F4B600A8E7B4 /* main.m in Sources */,
+				0409DA40181674F6008C1F66 /* DriverprotocolSignInfoEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +620,7 @@
 				0408E5AA1810F4B600A8E7B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0408E5AB1810F4B600A8E7B4 /* Build configuration list for PBXNativeTarget "BennyDrivingTests" */ = {
 			isa = XCConfigurationList;
@@ -614,6 +629,7 @@
 				0408E5AD1810F4B600A8E7B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
