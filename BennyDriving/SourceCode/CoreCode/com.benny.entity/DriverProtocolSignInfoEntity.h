@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DriverprotocolSignInfoEntity : NSObject
+@interface DriverProtocolSignInfoEntity : NSObject
 
 
 @property(nonatomic,retain)NSString * driSignProtocolTitle;//标题

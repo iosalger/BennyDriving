@@ -8,9 +8,10 @@
 
 #import "DriverprotocolSignInfoEntity.h"
 
-@implementation DriverprotocolSignInfoEntity
+@implementation DriverProtocolSignInfoEntity
 
-@synthesize     driSignProtocolTitle,//标题
+@synthesize
+    driSignProtocolTitle,//标题
     driSignProtocolContent;//内容
 
 -(id) initWithdriSignProtocolTitle:(NSString *) _driSignProtocolTitle
