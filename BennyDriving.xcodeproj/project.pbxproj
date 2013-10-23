@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040072621817BF7900F4D2E4 /* DriverAdditionInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 040072611817BF7900F4D2E4 /* DriverAdditionInfoEntity.m */; };
 		0403A66618178F7800C9A478 /* DriverConsumptionRecordInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403A66518178F7800C9A478 /* DriverConsumptionRecordInfoEntity.m */; };
 		0403A6691817A09900C9A478 /* DriverLocationInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403A6681817A09900C9A478 /* DriverLocationInfoEntity.m */; };
 		0403A66C1817AC7200C9A478 /* DriverOrderListInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403A66B1817AC7200C9A478 /* DriverOrderListInfoEntity.m */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040072601817BF7900F4D2E4 /* DriverAdditionInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverAdditionInfoEntity.h; sourceTree = "<group>"; };
+		040072611817BF7900F4D2E4 /* DriverAdditionInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverAdditionInfoEntity.m; sourceTree = "<group>"; };
 		0403A66418178F7800C9A478 /* DriverConsumptionRecordInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverConsumptionRecordInfoEntity.h; sourceTree = "<group>"; };
 		0403A66518178F7800C9A478 /* DriverConsumptionRecordInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverConsumptionRecordInfoEntity.m; sourceTree = "<group>"; };
 		0403A6671817A09900C9A478 /* DriverLocationInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverLocationInfoEntity.h; sourceTree = "<group>"; };
@@ -276,6 +279,8 @@
 				0403A6681817A09900C9A478 /* DriverLocationInfoEntity.m */,
 				0403A66A1817AC7200C9A478 /* DriverOrderListInfoEntity.h */,
 				0403A66B1817AC7200C9A478 /* DriverOrderListInfoEntity.m */,
+				040072601817BF7900F4D2E4 /* DriverAdditionInfoEntity.h */,
+				040072611817BF7900F4D2E4 /* DriverAdditionInfoEntity.m */,
 			);
 			path = com.benny.entity;
 			sourceTree = "<group>";
@@ -427,6 +432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040072621817BF7900F4D2E4 /* DriverAdditionInfoEntity.m in Sources */,
 				0408E5901810F4B600A8E7B4 /* ViewController.m in Sources */,
 				0408E5C61811299700A8E7B4 /* DriverLoginInfo.m in Sources */,
 				0408E58A1810F4B600A8E7B4 /* AppDelegate.m in Sources */,

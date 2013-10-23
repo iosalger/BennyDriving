@@ -21,9 +21,11 @@
 
 - (id) initWithDriverIdentifyID:(NSString *) _driLocationDriverIdentifyID
              andDriverLongitude:(NSString *) _driLocationDriverLongitude
-              andDriverLatitude:(NSString *) _driLocationlatitude
-                 andDriverStars:(NSString *) _driLocationStars
-              andDriverDistance:(NSString *) _driLocationDistance
-             andDriverShareTime:(NSString *) _driLocationShareTime;
+              andDriverLatitude:(NSString *) _driLocationDriverlatitude
+                 andDriverStars:(NSString *) _driLocationDriverStars
+              andDriverDistance:(NSString *) _driLocationDriverDistance
+             andDriverShareTime:(NSString *) _driLocationDriverShareTime;
+- (id) initWithDriverLongitude:(NSString *) _driLocationDriverLongitude
+             andDriverLatitude:(NSString *) _driLocationDriverLatitude;
 
 @end
