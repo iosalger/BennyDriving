@@ -6,9 +6,9 @@
 //  Copyright (c) 2013年 Alger. All rights reserved.
 //
 
-#import "DriverOrderListInfoEntity.h"
+#import "DriverOrderListPoolInfoEntity.h"
 
-@implementation DriverOrderListInfoEntity
+@implementation DriverOrderListPoolInfoEntity
 @synthesize
 driOrderDriverPredictMileage,//预计里程
 driOrderDriverEstimatedRevenue,//预计费用

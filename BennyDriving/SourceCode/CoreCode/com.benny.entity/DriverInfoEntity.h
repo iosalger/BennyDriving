@@ -10,35 +10,33 @@
 
 @interface DriverInfoEntity : NSObject
 
-@property(nonatomic,retain)NSString * driJobNumber;//司机工号
-@property(nonatomic,retain)NSString * driPhotoURL;//头像照片路径
-@property(nonatomic,retain)NSString * driName;//司机姓名
-@property(nonatomic,retain)NSString * driPhone;//司机电话
-@property(nonatomic,retain)NSString * driSex;//司机性别
-@property(nonatomic,retain)NSString * driDrivingPermitNumber;//准驾证号
-@property(nonatomic,retain)NSString * driIDnumber;//身份证号
-@property(nonatomic,retain)NSString * driDriveNumber;//驾驶证号
-@property(nonatomic,retain)NSString * driIDAddress;//身份证地址
-@property(nonatomic,retain)NSString * driLiveAddress;//居住地址
-@property(nonatomic,retain)NSString * driEmergencyContactPhone;//紧急联系人电话
-@property(nonatomic,retain)NSString * driEmergencyContactName;//紧急联系人姓名
-@property(nonatomic,assign)NSInteger  driDrivingCount;//司机代驾次数
-@property(nonatomic,assign)NSInteger  driDriverGrade;//司机评级
+@property(nonatomic,retain)NSString * driDriverJobNumber;//司机工号
+@property(nonatomic,retain)NSString * driDriverPhotoURL;//头像照片路径
+@property(nonatomic,retain)NSString * driDriverName;//司机姓名
+@property(nonatomic,retain)NSString * driDriverPhone;//司机电话
+@property(nonatomic,retain)NSString * driDriverSex;//司机性别
+@property(nonatomic,retain)NSString * driDriverDrivingPermitNumber;//准驾证号
+@property(nonatomic,retain)NSString * driDriverIDnumber;//身份证号
+@property(nonatomic,retain)NSString * driDriverDriveNumber;//驾驶证号
+@property(nonatomic,retain)NSString * driDriverIDAddress;//身份证地址
+@property(nonatomic,retain)NSString * driDriverLiveAddress;//居住地址
+@property(nonatomic,retain)NSString * driDriverEmergencyContactPhone;//紧急联系人电话
+@property(nonatomic,retain)NSString * driDriverEmergencyContactName;//紧急联系人姓名
+@property(nonatomic,assign)NSInteger  driDriverDrivingCount;//司机代驾次数
+@property(nonatomic,assign)NSInteger  driDriverDriverGrade;//司机评级
 
-
-- (id) init;
-- (id) initWithDriJobNumber:(NSString *) _driJobNumber
-             andDriPhotoURL:(NSString *) _driPhotoURL
-                 andDriName:(NSString *) _driName
-                andDriPhone:(NSString *) _driPhone
-                  andDriSex:(NSString *) _driSex
-  andDriDrivingPermitNumber:(NSString *) _driDrivingPermitNumber
-             andDriIDnumber:(NSString *) _driIDnumber
-          andDriDriveNumber:(NSString *) _driDriveNumber
-            andDriIDAddress:(NSString *) _driIDAddress
-          andDriLiveAddress:(NSString *) _driLiveAddress
- andDriEmergencyContactPhone:(NSString *) _driEmergencyContactPhone
- andDriEmergencyContactName:(NSString *) _driEmergencyContactName;
+- (id) initWithDriDriverJobNumber:(NSString *) _driJobNumber
+             andDriDriverPhotoURL:(NSString *) _driPhotoURL
+                 andDrDriveriName:(NSString *) _driName
+                andDriDriverPhone:(NSString *) _driPhone
+                  andDriDriverSex:(NSString *) _driSex
+  andDriDriverDrivingPermitNumber:(NSString *) _driDrivingPermitNumber
+             andDriDriverIDnumber:(NSString *) _driIDnumber
+          andDriDriverDriveNumber:(NSString *) _driDriveNumber
+            andDriDriverIDAddress:(NSString *) _driIDAddress
+          andDriDriverLiveAddress:(NSString *) _driLiveAddress
+ andDriDriverEmergencyContactPhone:(NSString *) _driEmergencyContactPhone
+ andDriDriverEmergencyContactName:(NSString *) _driEmergencyContactName;
 
 
 @end

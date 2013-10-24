@@ -4,11 +4,11 @@
 //
 //  Created by Alger on 13-10-23.
 //  Copyright (c) 2013年 Alger. All rights reserved.
-//
+//  抢单池
 
 #import <Foundation/Foundation.h>
 
-@interface DriverOrderListInfoEntity : NSObject
+@interface DriverOrderListPoolInfoEntity : NSObject
 
 @property(nonatomic,retain)NSString * driOrderDriverOrderID;//订单ID
 @property(nonatomic,retain)NSString * driOrderDriverUserName;//客户名称
