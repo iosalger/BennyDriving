@@ -33,6 +33,7 @@
 		0409DA40181674F6008C1F66 /* DriverProtocolSignInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0409DA3F181674F6008C1F66 /* DriverProtocolSignInfoEntity.m */; };
 		040ACF991819006300E1A060 /* AcceptOrderInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 040ACF981819006300E1A060 /* AcceptOrderInfoEntity.m */; };
 		040ACF9C1819106300E1A060 /* SuggestionInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 040ACF9B1819106300E1A060 /* SuggestionInfoEntity.m */; };
+		041FCA2A181E100D0094BBA2 /* CustomEvaluatedInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FCA29181E100D0094BBA2 /* CustomEvaluatedInfoEntity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		040ACF981819006300E1A060 /* AcceptOrderInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcceptOrderInfoEntity.m; sourceTree = "<group>"; };
 		040ACF9A1819106300E1A060 /* SuggestionInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionInfoEntity.h; sourceTree = "<group>"; };
 		040ACF9B1819106300E1A060 /* SuggestionInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionInfoEntity.m; sourceTree = "<group>"; };
+		041FCA28181E100D0094BBA2 /* CustomEvaluatedInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomEvaluatedInfoEntity.h; sourceTree = "<group>"; };
+		041FCA29181E100D0094BBA2 /* CustomEvaluatedInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomEvaluatedInfoEntity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +304,8 @@
 				0406E863181A163600621B8D /* TopUpRecordInfoEntity.m */,
 				0406E865181A211C00621B8D /* HistoryOrderListInfoEntity.h */,
 				0406E866181A211C00621B8D /* HistoryOrderListInfoEntity.m */,
+				041FCA28181E100D0094BBA2 /* CustomEvaluatedInfoEntity.h */,
+				041FCA29181E100D0094BBA2 /* CustomEvaluatedInfoEntity.m */,
 			);
 			path = com.benny.entity;
 			sourceTree = "<group>";
@@ -456,6 +461,7 @@
 				0408E5901810F4B600A8E7B4 /* ViewController.m in Sources */,
 				0406E864181A163600621B8D /* TopUpRecordInfoEntity.m in Sources */,
 				0408E5C61811299700A8E7B4 /* DriverLoginInfo.m in Sources */,
+				041FCA2A181E100D0094BBA2 /* CustomEvaluatedInfoEntity.m in Sources */,
 				0408E58A1810F4B600A8E7B4 /* AppDelegate.m in Sources */,
 				0403A6691817A09900C9A478 /* DriverLocationInfoEntity.m in Sources */,
 				0408E5C11810F57600A8E7B4 /* DriverInfoEntity.m in Sources */,
