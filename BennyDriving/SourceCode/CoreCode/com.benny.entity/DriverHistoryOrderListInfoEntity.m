@@ -6,9 +6,9 @@
 //  Copyright (c) 2013年 Alger. All rights reserved.
 //
 
-#import "HistoryOrderListInfoEntity.h"
+#import "DriverHistoryOrderListInfoEntity.h"
 
-@implementation HistoryOrderListInfoEntity
+@implementation DriverHistoryOrderListInfoEntity
 
 @synthesize 
  driHistoryOrderOrderID,//订单ID

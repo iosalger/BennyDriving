@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SuggestionInfoEntity : NSObject
+@interface DriverSuggestionInfoEntity : NSObject
 
 @property(nonatomic,retain)NSString * driSuggestionDriverPhone;//司机电话
 @property(nonatomic,retain)NSString * driSuggestionSubmitContent;//提交内容

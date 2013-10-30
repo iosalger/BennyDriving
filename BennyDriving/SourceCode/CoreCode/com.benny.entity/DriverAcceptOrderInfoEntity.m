@@ -6,9 +6,9 @@
 //  Copyright (c) 2013年 Alger. All rights reserved.
 //
 
-#import "AcceptOrderInfoEntity.h"
+#import "DriverAcceptOrderInfoEntity.h"
 
-@implementation AcceptOrderInfoEntity
+@implementation DriverAcceptOrderInfoEntity
 @synthesize
 driAcceptOrderOrderID,//订单ID
 driAcceptOrderSubscribeTime,//预约时间

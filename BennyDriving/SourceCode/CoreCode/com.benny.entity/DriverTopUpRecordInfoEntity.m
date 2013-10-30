@@ -6,9 +6,9 @@
 //  Copyright (c) 2013年 Alger. All rights reserved.
 //
 
-#import "TopUpRecordInfoEntity.h"
+#import "DriverTopUpRecordInfoEntity.h"
 
-@implementation TopUpRecordInfoEntity
+@implementation DriverTopUpRecordInfoEntity
 
 @synthesize
 

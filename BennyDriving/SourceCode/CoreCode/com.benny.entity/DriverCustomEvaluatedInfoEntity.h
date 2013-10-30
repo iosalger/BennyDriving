@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CustomEvaluatedInfoEntity : NSObject
+@interface DriverCustomEvaluatedInfoEntity : NSObject
 
 @property(nonatomic,retain)NSString * driCustomEvaluatedUserPhone;//用户电话
 @property(nonatomic,retain)NSString * driCustomEvaluatedTime;//评价时间

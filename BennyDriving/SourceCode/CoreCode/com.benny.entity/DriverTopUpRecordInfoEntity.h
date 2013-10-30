@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TopUpRecordInfoEntity : NSObject
+@interface DriverTopUpRecordInfoEntity : NSObject
 
 @property(nonatomic,retain)NSString *recharge;
 @property(nonatomic,retain)NSString * driTopUpRaiseTimeOfApplication;//提出申请时间

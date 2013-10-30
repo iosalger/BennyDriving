@@ -6,9 +6,9 @@
 //  Copyright (c) 2013年 Alger. All rights reserved.
 //
 
-#import "WithDrawMoneyRecordInfoEntity.h"
+#import "DriverWithDrawMoneyRecordInfoEntity.h"
 
-@implementation WithDrawMoneyRecordInfoEntity
+@implementation DriverWithDrawMoneyRecordInfoEntity
 
 @synthesize 
  driWithDrawMoneyRecordOrderID,//提现记录订单ID

@@ -6,9 +6,9 @@
 //  Copyright (c) 2013年 Alger. All rights reserved.
 //
 
-#import "SuggestionInfoEntity.h"
+#import "DriverSuggestionInfoEntity.h"
 
-@implementation SuggestionInfoEntity
+@implementation DriverSuggestionInfoEntity
 @synthesize 
 driSuggestionDriverPhone,//司机电话
 driSuggestionSubmitContent,//提交内容

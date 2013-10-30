@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AcceptOrderInfoEntity : NSObject
+@interface DriverAcceptOrderInfoEntity : NSObject
 
 
 @property(nonatomic,retain)NSString * driAcceptOrderOrderID;//订单ID

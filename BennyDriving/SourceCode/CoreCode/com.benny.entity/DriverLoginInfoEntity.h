@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DriverLoginInfo : NSObject
+@interface DriverLoginInfoEntity : NSObject
 
 
 @property(nonatomic,retain)NSString * driLoginDriverIdentifyId;//司机唯一标识符

@@ -6,9 +6,9 @@
 //  Copyright (c) 2013年 Alger. All rights reserved.
 //
 
-#import "CustomEvaluatedInfoEntity.h"
+#import "DriverCustomEvaluatedInfoEntity.h"
 
-@implementation CustomEvaluatedInfoEntity
+@implementation DriverCustomEvaluatedInfoEntity
 
 @synthesize 
     driCustomEvaluatedUserPhone,//用户电话

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface WithDrawMoneyRecordInfoEntity : NSObject
+@interface DriverWithDrawMoneyRecordInfoEntity : NSObject
 
 @property(nonatomic,retain)NSString * driWithDrawMoneyRecordOrderID;//提现记录订单ID
 @property(nonatomic,retain)NSString * driWithDrawMoneyRecordUserName;//提现人姓名

@@ -1,8 +1,8 @@
 //
-//  DriverprotocolSignInfoEntity.h
+//  DriverProtocolSignInfoEntity.h
 //  BennyDriving
 //
-//  Created by Alger on 13-10-22.
+//  Created by Alger on 13-10-30.
 //  Copyright (c) 2013年 Alger. All rights reserved.
 //
 
@@ -11,9 +11,12 @@
 @interface DriverProtocolSignInfoEntity : NSObject
 
 
-@property(nonatomic,retain)NSString * driSignProtocolTitle;//标题
-@property(nonatomic,retain)NSString * driSignProtocolContent;//内容
 
-- (id) initWithdriSignProtocolTitle:(NSString *) _driSignProtocolTitle
-         anddriSignProtocolContent:(NSString *) _driSignProtocolContent;
+@property(nonatomic,retain)NSString * driDriverPotocolTitle;//标题
+@property(nonatomic,retain)NSString * driDriverPotocolContent;//内容
+
+
+- (id) initWithDriverPotocolTitle:(NSString *) _driDriverPotocolTitle
+          andDriverPotocolContent:(NSString *) _driDriverPotocolContent;
+
 @end

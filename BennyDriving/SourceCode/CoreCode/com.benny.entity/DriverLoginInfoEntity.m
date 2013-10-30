@@ -6,9 +6,9 @@
 //  Copyright (c) 2013年 Alger. All rights reserved.
 //
 
-#import "DriverLoginInfo.h"
+#import "DriverLoginInfoEntity.h"
 
-@implementation DriverLoginInfo
+@implementation DriverLoginInfoEntity
 
 @synthesize
 driLoginDriverIdentifyId,//司机唯一标识符

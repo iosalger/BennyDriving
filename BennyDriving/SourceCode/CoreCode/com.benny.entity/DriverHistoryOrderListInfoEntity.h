@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HistoryOrderListInfoEntity : NSObject
+@interface DriverHistoryOrderListInfoEntity : NSObject
 
 
 

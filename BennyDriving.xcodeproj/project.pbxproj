@@ -11,9 +11,9 @@
 		0403A66618178F7800C9A478 /* DriverConsumptionRecordInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403A66518178F7800C9A478 /* DriverConsumptionRecordInfoEntity.m */; };
 		0403A6691817A09900C9A478 /* DriverLocationInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403A6681817A09900C9A478 /* DriverLocationInfoEntity.m */; };
 		0403A66C1817AC7200C9A478 /* DriverOrderListPoolInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403A66B1817AC7200C9A478 /* DriverOrderListPoolInfoEntity.m */; };
-		0406E864181A163600621B8D /* TopUpRecordInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406E863181A163600621B8D /* TopUpRecordInfoEntity.m */; };
-		0406E867181A211C00621B8D /* HistoryOrderListInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406E866181A211C00621B8D /* HistoryOrderListInfoEntity.m */; };
-		04079700181F5E760039CBB0 /* WithDrawMoneyRecordInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 040796FF181F5E760039CBB0 /* WithDrawMoneyRecordInfoEntity.m */; };
+		0406E864181A163600621B8D /* DriverTopUpRecordInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406E863181A163600621B8D /* DriverTopUpRecordInfoEntity.m */; };
+		0406E867181A211C00621B8D /* DriverHistoryOrderListInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406E866181A211C00621B8D /* DriverHistoryOrderListInfoEntity.m */; };
+		04079700181F5E760039CBB0 /* DriverWithDrawMoneyRecordInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 040796FF181F5E760039CBB0 /* DriverWithDrawMoneyRecordInfoEntity.m */; };
 		0408E57A1810F4B600A8E7B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0408E5791810F4B600A8E7B4 /* Foundation.framework */; };
 		0408E57C1810F4B600A8E7B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0408E57B1810F4B600A8E7B4 /* CoreGraphics.framework */; };
 		0408E57E1810F4B600A8E7B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0408E57D1810F4B600A8E7B4 /* UIKit.framework */; };
@@ -30,11 +30,11 @@
 		0408E5A51810F4B600A8E7B4 /* BennyDrivingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408E5A41810F4B600A8E7B4 /* BennyDrivingTests.m */; };
 		0408E5C11810F57600A8E7B4 /* DriverInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408E5BA1810F57600A8E7B4 /* DriverInfoEntity.m */; };
 		0408E5C31810FEC700A8E7B4 /* 55stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 0408E5C21810FEC700A8E7B4 /* 55stars.png */; };
-		0408E5C61811299700A8E7B4 /* DriverLoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408E5C51811299700A8E7B4 /* DriverLoginInfo.m */; };
-		0409DA40181674F6008C1F66 /* DriverProtocolSignInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0409DA3F181674F6008C1F66 /* DriverProtocolSignInfoEntity.m */; };
-		040ACF991819006300E1A060 /* AcceptOrderInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 040ACF981819006300E1A060 /* AcceptOrderInfoEntity.m */; };
-		040ACF9C1819106300E1A060 /* SuggestionInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 040ACF9B1819106300E1A060 /* SuggestionInfoEntity.m */; };
-		041FCA2A181E100D0094BBA2 /* CustomEvaluatedInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FCA29181E100D0094BBA2 /* CustomEvaluatedInfoEntity.m */; };
+		0408E5C61811299700A8E7B4 /* DriverLoginInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408E5C51811299700A8E7B4 /* DriverLoginInfoEntity.m */; };
+		040ACF991819006300E1A060 /* DriverAcceptOrderInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 040ACF981819006300E1A060 /* DriverAcceptOrderInfoEntity.m */; };
+		040ACF9C1819106300E1A060 /* DriverSuggestionInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 040ACF9B1819106300E1A060 /* DriverSuggestionInfoEntity.m */; };
+		040FD13D1820D34400710828 /* DriverProtocolSignInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 040FD13C1820D34400710828 /* DriverProtocolSignInfoEntity.m */; };
+		041FCA2A181E100D0094BBA2 /* DriverCustomEvaluatedInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FCA29181E100D0094BBA2 /* DriverCustomEvaluatedInfoEntity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,12 +56,12 @@
 		0403A6681817A09900C9A478 /* DriverLocationInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverLocationInfoEntity.m; sourceTree = "<group>"; };
 		0403A66A1817AC7200C9A478 /* DriverOrderListPoolInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverOrderListPoolInfoEntity.h; sourceTree = "<group>"; };
 		0403A66B1817AC7200C9A478 /* DriverOrderListPoolInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverOrderListPoolInfoEntity.m; sourceTree = "<group>"; };
-		0406E862181A163600621B8D /* TopUpRecordInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopUpRecordInfoEntity.h; sourceTree = "<group>"; };
-		0406E863181A163600621B8D /* TopUpRecordInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopUpRecordInfoEntity.m; sourceTree = "<group>"; };
-		0406E865181A211C00621B8D /* HistoryOrderListInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryOrderListInfoEntity.h; sourceTree = "<group>"; };
-		0406E866181A211C00621B8D /* HistoryOrderListInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryOrderListInfoEntity.m; sourceTree = "<group>"; };
-		040796FE181F5E760039CBB0 /* WithDrawMoneyRecordInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithDrawMoneyRecordInfoEntity.h; sourceTree = "<group>"; };
-		040796FF181F5E760039CBB0 /* WithDrawMoneyRecordInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithDrawMoneyRecordInfoEntity.m; sourceTree = "<group>"; };
+		0406E862181A163600621B8D /* DriverTopUpRecordInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverTopUpRecordInfoEntity.h; sourceTree = "<group>"; };
+		0406E863181A163600621B8D /* DriverTopUpRecordInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverTopUpRecordInfoEntity.m; sourceTree = "<group>"; };
+		0406E865181A211C00621B8D /* DriverHistoryOrderListInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverHistoryOrderListInfoEntity.h; sourceTree = "<group>"; };
+		0406E866181A211C00621B8D /* DriverHistoryOrderListInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverHistoryOrderListInfoEntity.m; sourceTree = "<group>"; };
+		040796FE181F5E760039CBB0 /* DriverWithDrawMoneyRecordInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverWithDrawMoneyRecordInfoEntity.h; sourceTree = "<group>"; };
+		040796FF181F5E760039CBB0 /* DriverWithDrawMoneyRecordInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverWithDrawMoneyRecordInfoEntity.m; sourceTree = "<group>"; };
 		0408E5761810F4B600A8E7B4 /* BennyDriving.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BennyDriving.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0408E5791810F4B600A8E7B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0408E57B1810F4B600A8E7B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -84,16 +84,16 @@
 		0408E5B91810F57600A8E7B4 /* DriverInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverInfoEntity.h; sourceTree = "<group>"; };
 		0408E5BA1810F57600A8E7B4 /* DriverInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverInfoEntity.m; sourceTree = "<group>"; };
 		0408E5C21810FEC700A8E7B4 /* 55stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 55stars.png; sourceTree = "<group>"; };
-		0408E5C41811299700A8E7B4 /* DriverLoginInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverLoginInfo.h; sourceTree = "<group>"; };
-		0408E5C51811299700A8E7B4 /* DriverLoginInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverLoginInfo.m; sourceTree = "<group>"; };
-		0409DA3E181674F6008C1F66 /* DriverProtocolSignInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverProtocolSignInfoEntity.h; sourceTree = "<group>"; };
-		0409DA3F181674F6008C1F66 /* DriverProtocolSignInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverProtocolSignInfoEntity.m; sourceTree = "<group>"; };
-		040ACF971819006300E1A060 /* AcceptOrderInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcceptOrderInfoEntity.h; sourceTree = "<group>"; };
-		040ACF981819006300E1A060 /* AcceptOrderInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcceptOrderInfoEntity.m; sourceTree = "<group>"; };
-		040ACF9A1819106300E1A060 /* SuggestionInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionInfoEntity.h; sourceTree = "<group>"; };
-		040ACF9B1819106300E1A060 /* SuggestionInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionInfoEntity.m; sourceTree = "<group>"; };
-		041FCA28181E100D0094BBA2 /* CustomEvaluatedInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomEvaluatedInfoEntity.h; sourceTree = "<group>"; };
-		041FCA29181E100D0094BBA2 /* CustomEvaluatedInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomEvaluatedInfoEntity.m; sourceTree = "<group>"; };
+		0408E5C41811299700A8E7B4 /* DriverLoginInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverLoginInfoEntity.h; sourceTree = "<group>"; };
+		0408E5C51811299700A8E7B4 /* DriverLoginInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverLoginInfoEntity.m; sourceTree = "<group>"; };
+		040ACF971819006300E1A060 /* DriverAcceptOrderInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverAcceptOrderInfoEntity.h; sourceTree = "<group>"; };
+		040ACF981819006300E1A060 /* DriverAcceptOrderInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverAcceptOrderInfoEntity.m; sourceTree = "<group>"; };
+		040ACF9A1819106300E1A060 /* DriverSuggestionInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverSuggestionInfoEntity.h; sourceTree = "<group>"; };
+		040ACF9B1819106300E1A060 /* DriverSuggestionInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverSuggestionInfoEntity.m; sourceTree = "<group>"; };
+		040FD13B1820D34400710828 /* DriverProtocolSignInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverProtocolSignInfoEntity.h; sourceTree = "<group>"; };
+		040FD13C1820D34400710828 /* DriverProtocolSignInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverProtocolSignInfoEntity.m; sourceTree = "<group>"; };
+		041FCA28181E100D0094BBA2 /* DriverCustomEvaluatedInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverCustomEvaluatedInfoEntity.h; sourceTree = "<group>"; };
+		041FCA29181E100D0094BBA2 /* DriverCustomEvaluatedInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverCustomEvaluatedInfoEntity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +239,7 @@
 		0408E5B31810F57600A8E7B4 /* AdditionFramWork */ = {
 			isa = PBXGroup;
 			children = (
+				040FD13E1820E41E00710828 /* com.benny.add.network */,
 				0408E5B41810F57600A8E7B4 /* com.benny.add.gps */,
 				0408E5B51810F57600A8E7B4 /* com.benny.add.map */,
 			);
@@ -287,10 +288,10 @@
 			children = (
 				0408E5B91810F57600A8E7B4 /* DriverInfoEntity.h */,
 				0408E5BA1810F57600A8E7B4 /* DriverInfoEntity.m */,
-				0408E5C41811299700A8E7B4 /* DriverLoginInfo.h */,
-				0408E5C51811299700A8E7B4 /* DriverLoginInfo.m */,
-				0409DA3E181674F6008C1F66 /* DriverProtocolSignInfoEntity.h */,
-				0409DA3F181674F6008C1F66 /* DriverProtocolSignInfoEntity.m */,
+				0408E5C41811299700A8E7B4 /* DriverLoginInfoEntity.h */,
+				0408E5C51811299700A8E7B4 /* DriverLoginInfoEntity.m */,
+				040FD13B1820D34400710828 /* DriverProtocolSignInfoEntity.h */,
+				040FD13C1820D34400710828 /* DriverProtocolSignInfoEntity.m */,
 				0403A66418178F7800C9A478 /* DriverConsumptionRecordInfoEntity.h */,
 				0403A66518178F7800C9A478 /* DriverConsumptionRecordInfoEntity.m */,
 				0403A6671817A09900C9A478 /* DriverLocationInfoEntity.h */,
@@ -299,18 +300,18 @@
 				0403A66B1817AC7200C9A478 /* DriverOrderListPoolInfoEntity.m */,
 				040072601817BF7900F4D2E4 /* DriverAdditionInfoEntity.h */,
 				040072611817BF7900F4D2E4 /* DriverAdditionInfoEntity.m */,
-				040ACF971819006300E1A060 /* AcceptOrderInfoEntity.h */,
-				040ACF981819006300E1A060 /* AcceptOrderInfoEntity.m */,
-				040ACF9A1819106300E1A060 /* SuggestionInfoEntity.h */,
-				040ACF9B1819106300E1A060 /* SuggestionInfoEntity.m */,
-				0406E862181A163600621B8D /* TopUpRecordInfoEntity.h */,
-				0406E863181A163600621B8D /* TopUpRecordInfoEntity.m */,
-				0406E865181A211C00621B8D /* HistoryOrderListInfoEntity.h */,
-				0406E866181A211C00621B8D /* HistoryOrderListInfoEntity.m */,
-				041FCA28181E100D0094BBA2 /* CustomEvaluatedInfoEntity.h */,
-				041FCA29181E100D0094BBA2 /* CustomEvaluatedInfoEntity.m */,
-				040796FE181F5E760039CBB0 /* WithDrawMoneyRecordInfoEntity.h */,
-				040796FF181F5E760039CBB0 /* WithDrawMoneyRecordInfoEntity.m */,
+				040ACF971819006300E1A060 /* DriverAcceptOrderInfoEntity.h */,
+				040ACF981819006300E1A060 /* DriverAcceptOrderInfoEntity.m */,
+				040ACF9A1819106300E1A060 /* DriverSuggestionInfoEntity.h */,
+				040ACF9B1819106300E1A060 /* DriverSuggestionInfoEntity.m */,
+				0406E862181A163600621B8D /* DriverTopUpRecordInfoEntity.h */,
+				0406E863181A163600621B8D /* DriverTopUpRecordInfoEntity.m */,
+				0406E865181A211C00621B8D /* DriverHistoryOrderListInfoEntity.h */,
+				0406E866181A211C00621B8D /* DriverHistoryOrderListInfoEntity.m */,
+				041FCA28181E100D0094BBA2 /* DriverCustomEvaluatedInfoEntity.h */,
+				041FCA29181E100D0094BBA2 /* DriverCustomEvaluatedInfoEntity.m */,
+				040796FE181F5E760039CBB0 /* DriverWithDrawMoneyRecordInfoEntity.h */,
+				040796FF181F5E760039CBB0 /* DriverWithDrawMoneyRecordInfoEntity.m */,
 			);
 			path = com.benny.entity;
 			sourceTree = "<group>";
@@ -362,6 +363,13 @@
 			children = (
 			);
 			path = com.benny.entity.pub;
+			sourceTree = "<group>";
+		};
+		040FD13E1820E41E00710828 /* com.benny.add.network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = com.benny.add.network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,20 +471,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				040072621817BF7900F4D2E4 /* DriverAdditionInfoEntity.m in Sources */,
+				040FD13D1820D34400710828 /* DriverProtocolSignInfoEntity.m in Sources */,
 				0408E5901810F4B600A8E7B4 /* ViewController.m in Sources */,
-				0406E864181A163600621B8D /* TopUpRecordInfoEntity.m in Sources */,
-				0408E5C61811299700A8E7B4 /* DriverLoginInfo.m in Sources */,
-				04079700181F5E760039CBB0 /* WithDrawMoneyRecordInfoEntity.m in Sources */,
-				041FCA2A181E100D0094BBA2 /* CustomEvaluatedInfoEntity.m in Sources */,
+				0406E864181A163600621B8D /* DriverTopUpRecordInfoEntity.m in Sources */,
+				0408E5C61811299700A8E7B4 /* DriverLoginInfoEntity.m in Sources */,
+				04079700181F5E760039CBB0 /* DriverWithDrawMoneyRecordInfoEntity.m in Sources */,
+				041FCA2A181E100D0094BBA2 /* DriverCustomEvaluatedInfoEntity.m in Sources */,
 				0408E58A1810F4B600A8E7B4 /* AppDelegate.m in Sources */,
 				0403A6691817A09900C9A478 /* DriverLocationInfoEntity.m in Sources */,
 				0408E5C11810F57600A8E7B4 /* DriverInfoEntity.m in Sources */,
 				0408E5861810F4B600A8E7B4 /* main.m in Sources */,
-				0409DA40181674F6008C1F66 /* DriverProtocolSignInfoEntity.m in Sources */,
 				0403A66C1817AC7200C9A478 /* DriverOrderListPoolInfoEntity.m in Sources */,
-				0406E867181A211C00621B8D /* HistoryOrderListInfoEntity.m in Sources */,
-				040ACF991819006300E1A060 /* AcceptOrderInfoEntity.m in Sources */,
-				040ACF9C1819106300E1A060 /* SuggestionInfoEntity.m in Sources */,
+				0406E867181A211C00621B8D /* DriverHistoryOrderListInfoEntity.m in Sources */,
+				040ACF991819006300E1A060 /* DriverAcceptOrderInfoEntity.m in Sources */,
+				040ACF9C1819106300E1A060 /* DriverSuggestionInfoEntity.m in Sources */,
 				0403A66618178F7800C9A478 /* DriverConsumptionRecordInfoEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
