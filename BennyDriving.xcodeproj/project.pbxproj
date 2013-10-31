@@ -58,6 +58,7 @@
 		040FD17D182133D700710828 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040FD17C182133D700710828 /* MobileCoreServices.framework */; };
 		040FD17F1821342B00710828 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 040FD17E1821342B00710828 /* libz.1.2.5.dylib */; };
 		041FCA2A181E100D0094BBA2 /* DriverCustomEvaluatedInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FCA29181E100D0094BBA2 /* DriverCustomEvaluatedInfoEntity.m */; };
+		04A7BE011822292D006D9126 /* UtilHttpRequestNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A7BE001822292D006D9126 /* UtilHttpRequestNetWork.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +141,8 @@
 		040FD17E1821342B00710828 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		041FCA28181E100D0094BBA2 /* DriverCustomEvaluatedInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverCustomEvaluatedInfoEntity.h; sourceTree = "<group>"; };
 		041FCA29181E100D0094BBA2 /* DriverCustomEvaluatedInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverCustomEvaluatedInfoEntity.m; sourceTree = "<group>"; };
+		04A7BDFF1822292D006D9126 /* UtilHttpRequestNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilHttpRequestNetWork.h; sourceTree = "<group>"; };
+		04A7BE001822292D006D9126 /* UtilHttpRequestNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilHttpRequestNetWork.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +320,8 @@
 		0408E5B61810F57600A8E7B4 /* CoreCode */ = {
 			isa = PBXGroup;
 			children = (
+				04A7BE02182237D7006D9126 /* com.benny.configruation */,
+				04A7BDFE182228B0006D9126 /* com.benny.network */,
 				0409DA3D18165C10008C1F66 /* com.benny.entity.pub */,
 				0408E5B71810F57600A8E7B4 /* com.benny.control */,
 				0408E5B81810F57600A8E7B4 /* com.benny.entity */,
@@ -453,6 +458,22 @@
 			path = ASIHttpRequest;
 			sourceTree = "<group>";
 		};
+		04A7BDFE182228B0006D9126 /* com.benny.network */ = {
+			isa = PBXGroup;
+			children = (
+				04A7BDFF1822292D006D9126 /* UtilHttpRequestNetWork.h */,
+				04A7BE001822292D006D9126 /* UtilHttpRequestNetWork.m */,
+			);
+			path = com.benny.network;
+			sourceTree = "<group>";
+		};
+		04A7BE02182237D7006D9126 /* com.benny.configruation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = com.benny.configruation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -567,6 +588,7 @@
 				040FD17318212A6100710828 /* ASIInputStream.m in Sources */,
 				040FD17418212A6100710828 /* ASINetworkQueue.h in Sources */,
 				040FD17518212A6100710828 /* ASINetworkQueue.m in Sources */,
+				04A7BE011822292D006D9126 /* UtilHttpRequestNetWork.m in Sources */,
 				040FD17618212A6100710828 /* ASIProgressDelegate.h in Sources */,
 				040FD17718212A6100710828 /* Reachability.h in Sources */,
 				040FD1591821297900710828 /* Reachability.m in Sources */,
