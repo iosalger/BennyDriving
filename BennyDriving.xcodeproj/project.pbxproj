@@ -143,6 +143,7 @@
 		041FCA29181E100D0094BBA2 /* DriverCustomEvaluatedInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverCustomEvaluatedInfoEntity.m; sourceTree = "<group>"; };
 		04A7BDFF1822292D006D9126 /* UtilHttpRequestNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilHttpRequestNetWork.h; sourceTree = "<group>"; };
 		04A7BE001822292D006D9126 /* UtilHttpRequestNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilHttpRequestNetWork.m; sourceTree = "<group>"; };
+		930B6E681845E9E600A7A1E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -642,6 +643,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0408E58C1810F4B600A8E7B4 /* Base */,
+				930B6E681845E9E600A7A1E2 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
