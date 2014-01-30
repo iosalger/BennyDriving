@@ -38,6 +38,16 @@
                ReferencedContainer = "container:BennyDriving.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9357ED37188E64A600C79684"
+               BuildableName = "BennyDriving Tests.xctest"
+               BlueprintName = "BennyDriving Tests"
+               ReferencedContainer = "container:BennyDriving.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
