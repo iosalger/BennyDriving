@@ -74,6 +74,8 @@
 		939E02F1189B994300FE7DBD /* DriverLocationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 939E02F0189B994300FE7DBD /* DriverLocationInfo.m */; };
 		939E02F4189BA55200FE7DBD /* TaximeterInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 939E02F3189BA55200FE7DBD /* TaximeterInfo.m */; };
 		939E02F7189BA5F700FE7DBD /* DriverInfoModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 939E02F6189BA5F700FE7DBD /* DriverInfoModal.m */; };
+		939E02FA189BADF200FE7DBD /* DriverAccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 939E02F9189BADF200FE7DBD /* DriverAccountInfo.m */; };
+		939E02FD189BC01000FE7DBD /* DriverComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 939E02FC189BC01000FE7DBD /* DriverComment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -259,6 +261,10 @@
 		939E02F3189BA55200FE7DBD /* TaximeterInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaximeterInfo.m; sourceTree = "<group>"; };
 		939E02F5189BA5F700FE7DBD /* DriverInfoModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverInfoModal.h; sourceTree = "<group>"; };
 		939E02F6189BA5F700FE7DBD /* DriverInfoModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverInfoModal.m; sourceTree = "<group>"; };
+		939E02F8189BADF200FE7DBD /* DriverAccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverAccountInfo.h; sourceTree = "<group>"; };
+		939E02F9189BADF200FE7DBD /* DriverAccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverAccountInfo.m; sourceTree = "<group>"; };
+		939E02FB189BC01000FE7DBD /* DriverComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverComment.h; sourceTree = "<group>"; };
+		939E02FC189BC01000FE7DBD /* DriverComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverComment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -670,6 +676,10 @@
 				939E02F3189BA55200FE7DBD /* TaximeterInfo.m */,
 				939E02F5189BA5F700FE7DBD /* DriverInfoModal.h */,
 				939E02F6189BA5F700FE7DBD /* DriverInfoModal.m */,
+				939E02F8189BADF200FE7DBD /* DriverAccountInfo.h */,
+				939E02F9189BADF200FE7DBD /* DriverAccountInfo.m */,
+				939E02FB189BC01000FE7DBD /* DriverComment.h */,
+				939E02FC189BC01000FE7DBD /* DriverComment.m */,
 			);
 			path = com.benny.model;
 			sourceTree = "<group>";
@@ -904,6 +914,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9357ED1A188E546D00C79684 /* ASIAuthenticationDialog.h in Sources */,
+				939E02FD189BC01000FE7DBD /* DriverComment.m in Sources */,
 				9357ED1B188E546D00C79684 /* ASIAuthenticationDialog.m in Sources */,
 				9357ED1C188E546D00C79684 /* ASICacheDelegate.h in Sources */,
 				9357ED1D188E546D00C79684 /* ASIDownloadCache.h in Sources */,
@@ -924,6 +935,7 @@
 				9357ED26188E546D00C79684 /* ASIInputStream.h in Sources */,
 				9357ED4C188E65A800C79684 /* LoginNetWorkRequest.m in Sources */,
 				939D670B1897791D00D95AB6 /* FileManagerConfig.m in Sources */,
+				939E02FA189BADF200FE7DBD /* DriverAccountInfo.m in Sources */,
 				9357ED27188E546D00C79684 /* ASIInputStream.m in Sources */,
 				939E02F1189B994300FE7DBD /* DriverLocationInfo.m in Sources */,
 				939D6756189A51DB00D95AB6 /* MBProgressHUD.m in Sources */,

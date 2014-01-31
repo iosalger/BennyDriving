@@ -17,6 +17,7 @@
 @property(nonatomic,retain)NSString * driOrderDriverSubscribeEndPoint;//预约终点
 @property(nonatomic,retain)NSString * driOrderDriverEstimatedRevenue;//估计费用
 @property(nonatomic,retain)NSString * driOrderDriverPredictMileage;//预计里程
+@property(nonatomic,retain)NSString * driOrderDriverReMark;//备注
 
 
 
@@ -27,5 +28,6 @@
 andOrderDriverSubscribeStartPoint:(NSString *) _driOrderDriverSubscribeStartPoint
 andOrderDriverSubsceibeEndPoint:(NSString *) _driOrderDriverSubscribeEndpoint
 andOrderDriverEstimatedRevenue:(NSString *) _driOrderDriverEstimatedRevenue
-andOrderDriverPredictMileage:(NSString *) _driOrderDriverPredictMileage;
+andOrderDriverPredictMileage:(NSString *) _driOrderDriverPredictMileage
+     anddriOrderDriverReMark:(NSString *) _driOrderDriverReMark;
 @end

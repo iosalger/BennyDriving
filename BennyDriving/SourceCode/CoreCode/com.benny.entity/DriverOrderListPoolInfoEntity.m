@@ -16,8 +16,8 @@ driOrderDriverOrderID,//订单ID
 driOrderDriverSubscribeEndPoint,//预约终点
 driOrderDriverSubscribeStartPoint,//预约起点1
 driOrderDriverSubscribeTime,//预约时间
-driOrderDriverUserName;//客户名
-
+driOrderDriverUserName,//客户名
+driOrderDriverReMark;
 
 - (id) initWithDriverOrderID:(NSString *) _driOrderDriverOrderID
       andDriverOrderUserName:(NSString *) _driOrderDriverUserName
@@ -26,6 +26,7 @@ andOrderDriverSubscribeStartPoint:(NSString *) _driOrderDriverSubscribeStartPoin
 andOrderDriverSubsceibeEndPoint:(NSString *) _driOrderDriverSubscribeEndpoint
 andOrderDriverEstimatedRevenue:(NSString *) _driOrderDriverEstimatedRevenue
 andOrderDriverPredictMileage:(NSString *) _driOrderDriverPredictMileage
+     anddriOrderDriverReMark:(NSString *) _driOrderDriverReMark
 {
     self.driOrderDriverOrderID = _driOrderDriverOrderID;
     self.driOrderDriverUserName = _driOrderDriverUserName;
@@ -34,6 +35,7 @@ andOrderDriverPredictMileage:(NSString *) _driOrderDriverPredictMileage
     self.driOrderDriverSubscribeEndPoint = _driOrderDriverSubscribeEndpoint;
     self.driOrderDriverEstimatedRevenue = _driOrderDriverEstimatedRevenue;
     self.driOrderDriverPredictMileage = _driOrderDriverPredictMileage;
+    self.driOrderDriverReMark = _driOrderDriverReMark;
     
     return self;
     

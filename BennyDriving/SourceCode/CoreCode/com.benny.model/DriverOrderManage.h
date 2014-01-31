@@ -23,4 +23,6 @@
 - (void)subscribeOrder;
 //History order
 - (void)historyOrder;
+//order extra money
+- (void) bonds;
 @end

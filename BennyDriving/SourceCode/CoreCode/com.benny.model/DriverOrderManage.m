@@ -135,4 +135,34 @@
     [request startAsynchronous];
 }
 
+
+
+- (void) bonds
+{
+
+    NSString *strURL = @"http://localhost:8080/benny_driving/bonus/checkBonus.action";
+    NSURL *URL = [NSURL URLWithString:strURL];
+    files = [FileManagerConfig instance];
+    NSString *driverID = [files readFile];
+    request = [ASIFormDataRequest requestWithURL:URL];
+    NSMutableDictionary *mtbDict = [[NSMutableDictionary alloc]init];
+    [mtbDict setValue:@"text/html" forKey:@"Content-Type"];
+    [mtbDict setValue:@"UTF-8" forKey:@"Charset"];
+    [mtbDict setValue:driverID forKey:@"JSESSIONID"];
+    
+    [request setRequestHeaders:mtbDict];
+    [request setPostValue:@"" forKey:@"orderid"];
+    [request setCompletionBlock:^{
+      
+        NSData *resData = [request responseData];
+        
+        NSDictionary *resDict = [NSJSONSerialization JSONObjectWithData:resData options:NSJSONReadingAllowFragments error:Nil];
+        
+        NSLog(@"%@",resDict);
+        
+    }];
+    
+    [request startAsynchronous];
+
+}
 @end
