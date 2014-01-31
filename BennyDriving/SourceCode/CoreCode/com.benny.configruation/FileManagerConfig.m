@@ -10,6 +10,15 @@
 
 @implementation FileManagerConfig
 
+  static FileManagerConfig *DefaultFileManager = nil;
+
++ (FileManagerConfig *)instance
+{
+        if (!DefaultFileManager) DefaultFileManager = [[self allocWithZone:NULL] init];
+        return DefaultFileManager;
+
+}
+
 - (void)createFile
 {
     // get library path
@@ -47,7 +56,7 @@
     }
     
 }
-- (void) readFile
+- (NSString *) readFile
 {
     //read file data
     NSArray *arrDoc = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -56,6 +65,7 @@
     NSString *strFile = [strLib stringByAppendingPathComponent:@"bennyConfig.txt"];
     NSString *content = [NSString stringWithContentsOfFile:strFile encoding:NSUTF8StringEncoding error:nil];
     NSLog(@"%@",content);
+    return content;
     //NSData *fileData = [NSData dataWithContentsOfFile:filesPath];
     //NSString *contents = [[NSString alloc]initWithData:fileData encoding:NSUTF8StringEncoding];
     //NSLog(@"%@",contents);

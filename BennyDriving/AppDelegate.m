@@ -7,12 +7,20 @@
 //
 
 #import "AppDelegate.h"
-
+#import "SMViewController.h"
+#import "LeftView.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    
+    NSArray *arrView = [[NSArray alloc]init];
+    LeftView *left = [[LeftView alloc]initWithArray:arrView];
+    SMViewController *smView = [SMViewController sharedSMViewController];
+    smView.leftView = left;
+    
     return YES;
 }
 							

@@ -28,7 +28,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     LoginNetWorkRequest *login = [[LoginNetWorkRequest alloc]init];
-    [login requestLoginAction];
+    //[login requestLoginAction];
+    [login checkdeal];
 }
 
 - (void)didReceiveMemoryWarning

@@ -11,8 +11,15 @@
 @interface FileManagerConfig : NSObject
 
 
+
+#pragma mark - 
+#pragma mark Class Method
++ (FileManagerConfig *)instance;
+#pragma mark - 
+#pragma mark Operation Method
 - (void)createFile;
 - (void)saveContent;
 - (void) writeContent:(NSString *) _content;
-- (void) readFile;
+- (NSString *) readFile;
+
 @end

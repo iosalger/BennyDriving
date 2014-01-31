@@ -16,20 +16,22 @@
 @end
 
 @implementation LoginNetWorkRequest
-
+@synthesize files,request;
 
 - (void) requestLoginAction
 {
-    // NSString *strURL = [NSString stringWithFormat:@"%@benny_driving/servlet/LoginServlet",ROOT_URL];
-    // NSString *strURL = @"http://abc.4008200972.com/benny_driving/servlet/LoginServlet";
+
     NSString *strURL = @"http://10.0.0.110:8080/benny_driving/servlet/LoginServlet";
     NSURL *url = [NSURL URLWithString:strURL];
-    // NSLog(@"%@",url);
-    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+    
+    request = [ASIFormDataRequest requestWithURL:url];
+    
     NSMutableDictionary *mtbDict = [[NSMutableDictionary alloc]init];
     [mtbDict setValue:@"text/html" forKey:@"Content-Type"];
     [mtbDict setValue:@"UTF-8" forKey:@"Charset"];
+    
     [request setRequestHeaders:mtbDict];
+    
     [request setPostValue:@"dri-login" forKey:@"action"];
     [request setPostValue:@"sh000311" forKey:@"acc"];
     [request setPostValue:@"123456" forKey:@"psd"];
@@ -38,13 +40,18 @@
         NSArray *cookies = [request responseCookies];
         NSString *JSessionID = nil;
         for (NSHTTPCookie *cookie in cookies) {
+            
             if ([[cookie name ] isEqualToString : @"JSESSIONID" ]) {
+                
                 NSLog ( @"session name:%@,value:%@" ,[cookie name ],[cookie value ]);
+                
                 JSessionID = [cookie value];
+                
                 NSLog(@"JSESSIONID:%@",JSessionID);
+                
             }
         }
-        FileManagerConfig *files = [[FileManagerConfig alloc]init];
+        files = [[FileManagerConfig alloc]init];
         [files createFile];
         [files writeContent:JSessionID];
         [files readFile];
@@ -67,6 +74,34 @@
     [request startAsynchronous];
     
     
+}
+
+- (void) checkdeal
+{
+    
+    NSString *strURL = @"http://10.0.0.110:8080/benny_driving/servlet/LoginServlet";
+    NSURL *url = [NSURL URLWithString:strURL];
+    NSString *driverID = [files readFile];
+    request = [ASIFormDataRequest requestWithURL:url];
+    
+    NSMutableDictionary *mtbDict = [[NSMutableDictionary alloc]init];
+    [mtbDict setValue:@"text/html" forKey:@"Content-Type"];
+    [mtbDict setValue:@"UTF-8" forKey:@"Charset"];
+    [mtbDict setValue:driverID forKey:@"JSESSIONID"];
+    [request setRequestHeaders:mtbDict];
+    
+    
+    
+    [request setPostValue:@"dri-qdxy" forKey:@"action"];
+    [request setPostValue:driverID forKey:@"driid"];
+    [request setPostValue:@"dealIdentify" forKey:@"agrid"];
+    [request setCompletionBlock:^{
+       NSString *resStr = [request responseString];
+        NSLog(@"resStr%@",resStr);
+        
+    }];
+    [request startAsynchronous];
+
 }
 
 @end
