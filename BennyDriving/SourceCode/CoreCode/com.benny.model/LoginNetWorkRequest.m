@@ -78,7 +78,9 @@
 
 - (void) checkdeal
 {
-    
+    @autoreleasepool {
+        
+
     NSString *strURL = @"http://10.0.0.110:8080/benny_driving/servlet/LoginServlet";
     NSURL *url = [NSURL URLWithString:strURL];
     NSString *driverID = [files readFile];
@@ -101,7 +103,12 @@
         
     }];
     [request startAsynchronous];
-
+    
+    }
 }
+
+
+
+
 
 @end

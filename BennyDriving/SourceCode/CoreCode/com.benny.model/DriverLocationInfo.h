@@ -18,7 +18,7 @@
 @property(nonatomic,retain)ASIFormDataRequest *request;
 
 //get Location
-- (void) driverLocation:(MKMapView *) _mapView;
+- (void) driverLocation:(CLLocationCoordinate2D) _location;
 //cancel Location
 - (void) cancelLocation;
 

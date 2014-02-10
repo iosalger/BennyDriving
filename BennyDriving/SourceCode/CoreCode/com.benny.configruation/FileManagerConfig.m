@@ -70,13 +70,24 @@
     //NSString *contents = [[NSString alloc]initWithData:fileData encoding:NSUTF8StringEncoding];
     //NSLog(@"%@",contents);
 }
-- (void)saveContent
+
+
+-(void)createAccountPlist:(NSDictionary *) _content
 {
+    NSArray *arrDoc = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *strLib = [arrDoc objectAtIndex:0];
+    
+    NSString *filePath = [strLib stringByAppendingPathComponent:@"account.plist"];
 
-
+    
+  BOOL result =  [_content writeToFile:filePath atomically:YES];
+    if (result) {
+        NSLog(@"Success");
+    }else
+    {
+        NSLog(@"Failed!");
+    }
 
 }
-
-
 
 @end

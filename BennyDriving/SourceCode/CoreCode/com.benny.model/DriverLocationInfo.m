@@ -22,7 +22,7 @@
 @implementation DriverLocationInfo
 @synthesize files,request;
 
-- (void) driverLocation:(MKMapView *) _mapView
+- (void) driverLocation:(CLLocationCoordinate2D) _location
 {
 
    
@@ -32,7 +32,7 @@
     request = [ASIFormDataRequest requestWithURL:URL];
     NSString *driverID = [files readFile];
     
-    CLLocationCoordinate2D coord =  _mapView.userLocation.coordinate;
+   // CLLocationCoordinate2D coord =  _mapView.userLocation.coordinate;
     
     NSMutableDictionary *mtbDict = [[NSMutableDictionary alloc]init];
     [mtbDict setValue:@"text/html" forKey:@"Content-Type"];
@@ -43,19 +43,23 @@
     
     [request setPostValue:@"dri-dwgx" forKey:@"action"];
     [request setPostValue:driverID forKey:@"driid"];
-    [request setPostValue:[NSString stringWithFormat:@"%lf",coord.longitude] forKey:@"log"];
-    [request setPostValue:[NSString stringWithFormat:@"%lf",coord.latitude] forKey:@"lat"];
-    [request setCompletionBlock:^{
+    [request setPostValue:[NSString stringWithFormat:@"%lf",_location.longitude] forKey:@"log"];
+    [request setPostValue:[NSString stringWithFormat:@"%lf",_location.latitude] forKey:@"lat"];
+
+    NSLog(@"%lf /n %lf",_location.longitude,_location.latitude);
+   
+        [request setCompletionBlock:^{
         NSString *strRes = [request responseString];
-        if ([strRes isEqualToString:@"0"]) {
-            
-            NSLog(@"Success");
-            
-        }else if ([strRes isEqualToString:@"-1"])
-        {
-            NSLog(@"Failed!");
-        
-        }
+            NSLog(@"%@",strRes);
+//        if ([strRes isEqualToString:@"0"]) {
+//            
+//            NSLog(@"Success");
+//            
+//        }else if ([strRes isEqualToString:@"-1"])
+//        {
+//            NSLog(@"Failed!");
+//        
+//        }
         
     }];
     [request startAsynchronous];

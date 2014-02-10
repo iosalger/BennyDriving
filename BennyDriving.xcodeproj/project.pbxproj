@@ -22,6 +22,8 @@
 		9311C07C188E49B100595665 /* 司机端app logo-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 9311C07A188E49B100595665 /* 司机端app logo-57x57.png */; };
 		9311C07D188E49B100595665 /* 司机端app logo-114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 9311C07B188E49B100595665 /* 司机端app logo-114x114.png */; };
 		9311C0CD188E4F1C00595665 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9311C0CC188E4F1C00595665 /* libxml2.2.dylib */; };
+		9317801E18A4D2BE00934CC9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9317801D18A4D2BE00934CC9 /* MapKit.framework */; };
+		9317802018A4D2CB00934CC9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9317801F18A4D2CB00934CC9 /* CoreLocation.framework */; };
 		933FAE9F18476EE8004DE5D5 /* 55stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 933FAE8F18476EE8004DE5D5 /* 55stars.png */; };
 		933FAEA018476EE8004DE5D5 /* icon_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 933FAE9118476EE8004DE5D5 /* icon_left.png */; };
 		933FAEA118476EE8004DE5D5 /* icon_phn.png in Resources */ = {isa = PBXBuildFile; fileRef = 933FAE9218476EE8004DE5D5 /* icon_phn.png */; };
@@ -36,6 +38,7 @@
 		933FAEAA18476EE8004DE5D5 /* main_dw.png in Resources */ = {isa = PBXBuildFile; fileRef = 933FAE9B18476EE8004DE5D5 /* main_dw.png */; };
 		933FAEAB18476EE8004DE5D5 /* main_fw.png in Resources */ = {isa = PBXBuildFile; fileRef = 933FAE9C18476EE8004DE5D5 /* main_fw.png */; };
 		933FAEAC18476EE8004DE5D5 /* main_sx.png in Resources */ = {isa = PBXBuildFile; fileRef = 933FAE9D18476EE8004DE5D5 /* main_sx.png */; };
+		9348F5F118A8937E00E8ACF2 /* OrderPoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9348F5F018A8937E00E8ACF2 /* OrderPoolViewController.m */; };
 		9357ED1A188E546D00C79684 /* ASIAuthenticationDialog.h in Sources */ = {isa = PBXBuildFile; fileRef = 040FD1401821297900710828 /* ASIAuthenticationDialog.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9357ED1B188E546D00C79684 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 040FD1411821297900710828 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9357ED1C188E546D00C79684 /* ASICacheDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 040FD1421821297900710828 /* ASICacheDelegate.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -189,6 +192,8 @@
 		931721E91861870000652C58 /* HttpRequestDataConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequestDataConfig.m; sourceTree = "<group>"; };
 		931721EB18618BCF00652C58 /* HttpJsonDataConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpJsonDataConfig.h; sourceTree = "<group>"; };
 		931721EC18618BCF00652C58 /* HttpJsonDataConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpJsonDataConfig.m; sourceTree = "<group>"; };
+		9317801D18A4D2BE00934CC9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9317801F18A4D2CB00934CC9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		933FAE8F18476EE8004DE5D5 /* 55stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 55stars.png; sourceTree = "<group>"; };
 		933FAE9118476EE8004DE5D5 /* icon_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_left.png; sourceTree = "<group>"; };
 		933FAE9218476EE8004DE5D5 /* icon_phn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_phn.png; sourceTree = "<group>"; };
@@ -229,6 +234,8 @@
 		933FAEC818477063004DE5D5 /* DriverTopUpRecordInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverTopUpRecordInfoEntity.m; sourceTree = "<group>"; };
 		933FAEC918477063004DE5D5 /* DriverWithDrawMoneyRecordInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverWithDrawMoneyRecordInfoEntity.h; sourceTree = "<group>"; };
 		933FAECA18477063004DE5D5 /* DriverWithDrawMoneyRecordInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverWithDrawMoneyRecordInfoEntity.m; sourceTree = "<group>"; };
+		9348F5EF18A8937E00E8ACF2 /* OrderPoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderPoolViewController.h; sourceTree = "<group>"; };
+		9348F5F018A8937E00E8ACF2 /* OrderPoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderPoolViewController.m; sourceTree = "<group>"; };
 		9357ED2F188E607700C79684 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		9357ED30188E607700C79684 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		9357ED32188E61E000C79684 /* EntityHandleHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityHandleHeader.h; sourceTree = "<group>"; };
@@ -272,6 +279,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9317802018A4D2CB00934CC9 /* CoreLocation.framework in Frameworks */,
+				9317801E18A4D2BE00934CC9 /* MapKit.framework in Frameworks */,
 				9311C0CD188E4F1C00595665 /* libxml2.2.dylib in Frameworks */,
 				040FD17F1821342B00710828 /* libz.1.2.5.dylib in Frameworks */,
 				0408E57C1810F4B600A8E7B4 /* CoreGraphics.framework in Frameworks */,
@@ -319,6 +328,8 @@
 		0408E5781810F4B600A8E7B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9317801F18A4D2CB00934CC9 /* CoreLocation.framework */,
+				9317801D18A4D2BE00934CC9 /* MapKit.framework */,
 				9311C0CC188E4F1C00595665 /* libxml2.2.dylib */,
 				040FD17E1821342B00710828 /* libz.1.2.5.dylib */,
 				040FD17C182133D700710828 /* MobileCoreServices.framework */,
@@ -734,6 +745,8 @@
 			children = (
 				9357ED2F188E607700C79684 /* MainViewController.h */,
 				9357ED30188E607700C79684 /* MainViewController.m */,
+				9348F5EF18A8937E00E8ACF2 /* OrderPoolViewController.h */,
+				9348F5F018A8937E00E8ACF2 /* OrderPoolViewController.m */,
 			);
 			path = com.benny.ui;
 			sourceTree = "<group>";
@@ -945,6 +958,7 @@
 				9357ED2B188E546D00C79684 /* Reachability.h in Sources */,
 				9357ED2C188E546D00C79684 /* Reachability.m in Sources */,
 				939D675F189A641300D95AB6 /* LeftView.m in Sources */,
+				9348F5F118A8937E00E8ACF2 /* OrderPoolViewController.m in Sources */,
 				0408E58A1810F4B600A8E7B4 /* AppDelegate.m in Sources */,
 				0408E5861810F4B600A8E7B4 /* main.m in Sources */,
 			);
