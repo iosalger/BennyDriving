@@ -90,4 +90,29 @@
 
 }
 
+-(NSString *)BundleVersion
+{
+    //get version from info.plist
+    NSDictionary *infoDict = [[NSBundle mainBundle]infoDictionary];
+    
+    NSString *version = [infoDict objectForKey:@"CFBundleVersion"];
+    return version;
+}
+
+
+-(NSDictionary *)readAccountPlist
+{
+    @autoreleasepool {
+        
+    NSDictionary *DictAccount = [[NSDictionary alloc]init];
+        NSArray *arrDoc = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *strLib = [arrDoc objectAtIndex:0];
+        NSString *filePath = [strLib stringByAppendingPathComponent:@"account.plist"];
+        DictAccount = [NSDictionary dictionaryWithContentsOfFile:filePath];
+        
+        return DictAccount;
+    }
+
+}
+
 @end

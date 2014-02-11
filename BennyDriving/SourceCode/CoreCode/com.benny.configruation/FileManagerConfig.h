@@ -22,4 +22,6 @@
 - (void) writeContent:(NSString *) _content;
 - (NSString *) readFile;
 -(void)createAccountPlist:(NSDictionary *) _content;
+-(NSDictionary *)readAccountPlist;
+-(void)BundleVersion;
 @end

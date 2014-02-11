@@ -18,65 +18,70 @@
 @implementation LoginNetWorkRequest
 @synthesize files,request;
 
-- (void) requestLoginAction
+- (BOOL) requestLoginAction:(NSDictionary *) _account
 {
-
-    NSString *strURL = @"http://10.0.0.110:8080/benny_driving/servlet/LoginServlet";
-    NSURL *url = [NSURL URLWithString:strURL];
+    @autoreleasepool {
+        
     
-    request = [ASIFormDataRequest requestWithURL:url];
+        NSString *strURL = @"http://10.0.0.110:8080/benny_driving/servlet/LoginServlet";
+        NSURL *url = [NSURL URLWithString:strURL];
     
-    NSMutableDictionary *mtbDict = [[NSMutableDictionary alloc]init];
-    [mtbDict setValue:@"text/html" forKey:@"Content-Type"];
-    [mtbDict setValue:@"UTF-8" forKey:@"Charset"];
+        request = [ASIFormDataRequest requestWithURL:url];
     
-    [request setRequestHeaders:mtbDict];
+        NSMutableDictionary *mtbDict = [[NSMutableDictionary alloc]init];
+        [mtbDict setValue:@"text/html" forKey:@"Content-Type"];
+        [mtbDict setValue:@"UTF-8" forKey:@"Charset"];
     
-    [request setPostValue:@"dri-login" forKey:@"action"];
-    [request setPostValue:@"sh000311" forKey:@"acc"];
-    [request setPostValue:@"123456" forKey:@"psd"];
-    [request setPostValue:@"0.0.1" forKey:@"dri_version"];
-    [request setCompletionBlock:^{
-        NSArray *cookies = [request responseCookies];
-        NSString *JSessionID = nil;
-        for (NSHTTPCookie *cookie in cookies) {
+        [request setRequestHeaders:mtbDict];
+    
+        [request setPostValue:@"dri-login" forKey:@"action"];
+        [request setPostValue:[_account objectForKey:@"UserName"] forKey:@"acc"];
+        [request setPostValue:[_account objectForKey:@"PassWord"] forKey:@"psd"];
+        [request setPostValue:@"0.0.1" forKey:@"dri_version"];
+        [request setCompletionBlock:^(){
+            NSArray *cookies = [request responseCookies];
+            NSString *JSessionID = nil;
+            for (NSHTTPCookie *cookie in cookies) {
             
-            if ([[cookie name ] isEqualToString : @"JSESSIONID" ]) {
+                if ([[cookie name ] isEqualToString : @"JSESSIONID" ]) {
                 
-                NSLog ( @"session name:%@,value:%@" ,[cookie name ],[cookie value ]);
+                    NSLog ( @"session name:%@,value:%@" ,[cookie name ],[cookie value ]);
                 
-                JSessionID = [cookie value];
+                    JSessionID = [cookie value];
                 
-                NSLog(@"JSESSIONID:%@",JSessionID);
+                    NSLog(@"JSESSIONID:%@",JSessionID);
                 
+                }
             }
-        }
-        files = [[FileManagerConfig alloc]init];
-        [files createFile];
-        [files writeContent:JSessionID];
-        [files readFile];
-        NSData *data = [request responseData];
-        NSNumber *Dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-        NSLog(@"%@",Dict);
-        int response = [Dict intValue];
-        if (response == 0) {
             
-            NSLog(@"Login Success!");
+            files = [[FileManagerConfig alloc]init];
+            [files createFile];
+            [files writeContent:JSessionID];
+            [files readFile];
+            NSData *data = [request responseData];
+            NSNumber *Dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+            NSLog(@"%@",Dict);
+            int response = [Dict intValue];
             
-        } else {
+            if (response == 0) {
             
-            NSLog(@"Login failed!");
+                NSLog(@"Login Success!");
+                loginState = YES;
+                //  return loginState;
+            } else {
             
-        }
+                NSLog(@"Login failed!");
+            
+            }
         
-        
-    }];
+        }];
     [request startAsynchronous];
-    
-    
+
+    return loginState;
+    }
 }
 
-- (void) checkdeal
+- (void)checkdeal
 {
     @autoreleasepool {
         

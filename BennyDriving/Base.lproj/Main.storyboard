@@ -21,7 +21,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="r82-zE-Lam">
-                                        <barButtonItem key="leftBarButtonItem" title="Slider" id="vcS-Vv-kpU"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Slider" id="vcS-Vv-kpU">
+                                            <connections>
+                                                <action selector="isLogin:" destination="fMq-e4-xJ5" id="aDH-rX-pMf"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Phone" id="NBv-52-4iu">
                                             <connections>
                                                 <action selector="callPhoneToESQ:" destination="fMq-e4-xJ5" id="5t1-ni-ARq"/>

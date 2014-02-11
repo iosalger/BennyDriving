@@ -11,15 +11,18 @@
 @class FileManagerConfig,ASIFormDataRequest;
 
 
-@interface DriverLocationInfo : NSObject
+@interface DriverLocationInfo : NSObject<CLLocationManagerDelegate>
 
 
 @property(nonatomic,retain)FileManagerConfig *files;
 @property(nonatomic,retain)ASIFormDataRequest *request;
+//@property(nonatomic,retain)CLLocationManager *locationManager;
 
 //get Location
 - (void) driverLocation:(CLLocationCoordinate2D) _location;
 //cancel Location
 - (void) cancelLocation;
+
+-(void)LocationGPS;
 
 @end

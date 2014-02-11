@@ -11,6 +11,7 @@
 #import <CoreLocation/CoreLocation.h>
 @interface MainViewController : UIViewController<MKMapViewDelegate,CLLocationManagerDelegate>
 
+@property(nonatomic,retain)CLLocationManager *locationManager;
 - (IBAction)callPhoneToESQ:(id)sender;
 @property (strong, nonatomic) IBOutlet MKMapView *Benny_MainMapView;
 @property (strong, nonatomic) IBOutlet UIView *MainView;

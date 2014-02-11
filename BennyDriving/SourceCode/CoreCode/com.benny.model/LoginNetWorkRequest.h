@@ -10,11 +10,16 @@
 @class FileManagerConfig;
 @class ASIFormDataRequest;
 @interface LoginNetWorkRequest : NSObject
+{
+
+    BOOL loginState;
+
+}
 
 
 @property(nonatomic,retain)FileManagerConfig *files;
 @property(nonatomic,retain)ASIFormDataRequest *request;
-- (void) requestLoginAction;
+- (BOOL) requestLoginAction;
 
 - (void) checkdeal;
 @end
