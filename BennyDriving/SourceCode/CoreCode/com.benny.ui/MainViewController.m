@@ -28,6 +28,7 @@
 {
     DriverLocationInfo *driverLocation;
     FileManagerConfig *fileManager;
+    LoginNetWorkRequest *loginNetWork;
 }
 @end
 
@@ -146,12 +147,12 @@ locationManager
 
 }
  
-- (void)LoginView
+- (void)LoginViewInputAccount
 {
     @autoreleasepool {
         
     if (!(self.LoginView.isHidden)) {
-       NSDictionary *account =  [fileManager readAccountPlist];
+        NSDictionary *account =  [fileManager readAccountPlist];
         [self.tfUserName setText:[account objectForKey:@"UserName"]];
         [self.tfPassWord setText:[account objectForKey:@"PassWord"]];
       }
@@ -171,12 +172,28 @@ locationManager
             [fileManager createAccountPlist:accountDict];
         
         }
+        [loginNetWork requestLoginAction:accountDict];
+        
+        
     }
 }
 
 - (IBAction)isLogin:(id)sender {
     
-    BOOL LoginState = false;
+    BOOL loginState = loginNetWork.loginState;
+    if (loginState) {
+        
+        NSLog(@"Left slider");
+        
+    }else{
+    
+        [self.LoginView setHidden:NO];
+        NSDictionary *accountDict = [fileManager readAccountPlist];
+        self.tfUserName.text = [accountDict objectForKey:@"UserName"];
+        self.tfPassWord.text = [accountDict objectForKey:@"PassWord"];
+        
+    }
+    
     
 }
 

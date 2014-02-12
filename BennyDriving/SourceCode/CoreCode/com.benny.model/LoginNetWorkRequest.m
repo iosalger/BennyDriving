@@ -16,9 +16,9 @@
 @end
 
 @implementation LoginNetWorkRequest
-@synthesize files,request;
+@synthesize files,request,loginState;
 
-- (BOOL) requestLoginAction:(NSDictionary *) _account
+- (void) requestLoginAction:(NSDictionary *) _account
 {
     @autoreleasepool {
         

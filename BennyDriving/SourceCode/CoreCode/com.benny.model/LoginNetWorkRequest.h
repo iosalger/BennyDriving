@@ -19,7 +19,8 @@
 
 @property(nonatomic,retain)FileManagerConfig *files;
 @property(nonatomic,retain)ASIFormDataRequest *request;
-- (BOOL) requestLoginAction;
+@property(nonatomic,assign)BOOL loginState;
+- (void) requestLoginAction:(NSDictionary *) _account;
 
 - (void) checkdeal;
 @end
