@@ -10,6 +10,7 @@
 #import "LoginNetWorkRequest.h"
 #import "DriverLocationInfo.h"
 #import "FileManagerConfig.h"
+#import <QuartzCore/QuartzCore.h>
 #import <CoreLocation/CoreLocation.h>
 
 #define IS_IPHONE_5_5C_5S (fabs((double)[[UIScreen mainScreen] bounds].size.height - (double )568) < DBL_EPSILON )
@@ -72,9 +73,7 @@ locationManager
     self.Benny_MainMapView.showsUserLocation = YES;
     self.Benny_MainMapView.mapType = 0;
 	// Do any additional setup after loading the view.
-   // LoginNetWorkRequest *login = [[LoginNetWorkRequest alloc]init];
-    //[login requestLoginAction];
-    //[login checkdeal];
+    
     
     
     
@@ -160,6 +159,7 @@ locationManager
     }
 }
 - (IBAction)userLogin:(id)sender {
+    
     @autoreleasepool {
         
         NSDictionary *accountDict = [[NSDictionary alloc]init];
@@ -167,6 +167,7 @@ locationManager
         NSString *password = self.tfPassWord.text;
         [accountDict setValue:userName forKey:@"UserName"];
         [accountDict setValue:password forKey:@"PassWord"];
+        NSLog(@"%@",accountDict);
         BOOL isSave = [SwitchSvaePassWord isOn];
         if (isSave) {
             [fileManager createAccountPlist:accountDict];
@@ -188,6 +189,7 @@ locationManager
     }else{
     
         [self.LoginView setHidden:NO];
+        //[self.LoginView animationDidStart:[CAAnimation ]];
         NSDictionary *accountDict = [fileManager readAccountPlist];
         self.tfUserName.text = [accountDict objectForKey:@"UserName"];
         self.tfPassWord.text = [accountDict objectForKey:@"PassWord"];

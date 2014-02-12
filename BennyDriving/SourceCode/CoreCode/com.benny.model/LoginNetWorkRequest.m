@@ -38,6 +38,7 @@
         [request setPostValue:[_account objectForKey:@"UserName"] forKey:@"acc"];
         [request setPostValue:[_account objectForKey:@"PassWord"] forKey:@"psd"];
         [request setPostValue:@"0.0.1" forKey:@"dri_version"];
+    
         [request setCompletionBlock:^(){
             NSArray *cookies = [request responseCookies];
             NSString *JSessionID = nil;
@@ -55,10 +56,15 @@
             }
             
             files = [[FileManagerConfig alloc]init];
+            
             [files createFile];
+            
             [files writeContent:JSessionID];
+            
             [files readFile];
+            
             NSData *data = [request responseData];
+            
             NSNumber *Dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
             NSLog(@"%@",Dict);
             int response = [Dict intValue];
@@ -77,8 +83,9 @@
         }];
     [request startAsynchronous];
 
-    return loginState;
+    //return loginState;
     }
+
 }
 
 - (void)checkdeal

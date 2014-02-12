@@ -79,6 +79,7 @@
 		939E02F7189BA5F700FE7DBD /* DriverInfoModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 939E02F6189BA5F700FE7DBD /* DriverInfoModal.m */; };
 		939E02FA189BADF200FE7DBD /* DriverAccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 939E02F9189BADF200FE7DBD /* DriverAccountInfo.m */; };
 		939E02FD189BC01000FE7DBD /* DriverComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 939E02FC189BC01000FE7DBD /* DriverComment.m */; };
+		939F032818AB0FA5001D0C37 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939F032718AB0FA5001D0C37 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -272,6 +273,7 @@
 		939E02F9189BADF200FE7DBD /* DriverAccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverAccountInfo.m; sourceTree = "<group>"; };
 		939E02FB189BC01000FE7DBD /* DriverComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverComment.h; sourceTree = "<group>"; };
 		939E02FC189BC01000FE7DBD /* DriverComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverComment.m; sourceTree = "<group>"; };
+		939F032718AB0FA5001D0C37 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +281,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				939F032818AB0FA5001D0C37 /* QuartzCore.framework in Frameworks */,
 				9317802018A4D2CB00934CC9 /* CoreLocation.framework in Frameworks */,
 				9317801E18A4D2BE00934CC9 /* MapKit.framework in Frameworks */,
 				9311C0CD188E4F1C00595665 /* libxml2.2.dylib in Frameworks */,
@@ -328,6 +331,7 @@
 		0408E5781810F4B600A8E7B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				939F032718AB0FA5001D0C37 /* QuartzCore.framework */,
 				9317801F18A4D2CB00934CC9 /* CoreLocation.framework */,
 				9317801D18A4D2BE00934CC9 /* MapKit.framework */,
 				9311C0CC188E4F1C00595665 /* libxml2.2.dylib */,
