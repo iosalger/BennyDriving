@@ -72,24 +72,32 @@
 }
 
 
--(void)createAccountPlist:(NSDictionary *) _content
+-(void)createAccountPlist:(NSMutableDictionary *) _content
 {
+    @autoreleasepool {
+        
+    
+    NSDictionary *account = self.readAccountPlist;
+    BOOL isContent = [_content isEqualToDictionary:account];
+    if(!isContent){
     NSArray *arrDoc = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *strLib = [arrDoc objectAtIndex:0];
     
     NSString *filePath = [strLib stringByAppendingPathComponent:@"account.plist"];
 
     
-  BOOL result =  [_content writeToFile:filePath atomically:YES];
+    BOOL result =  [_content writeToFile:filePath atomically:YES];
     if (result) {
         NSLog(@"Success");
     }else
     {
         NSLog(@"Failed!");
     }
-
+        
+    }
 }
 
+}
 -(NSString *)BundleVersion
 {
     //get version from info.plist

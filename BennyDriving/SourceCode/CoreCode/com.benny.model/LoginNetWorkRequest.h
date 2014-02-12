@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 @class FileManagerConfig;
 @class ASIFormDataRequest;
+
 @interface LoginNetWorkRequest : NSObject
 {
 
@@ -20,7 +21,7 @@
 @property(nonatomic,retain)FileManagerConfig *files;
 @property(nonatomic,retain)ASIFormDataRequest *request;
 @property(nonatomic,assign)BOOL loginState;
-- (void) requestLoginAction:(NSDictionary *) _account;
+- (void) requestLoginAction:(NSMutableDictionary *) _account;
 
 - (void) checkdeal;
 @end

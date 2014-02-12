@@ -10,6 +10,7 @@
 #import "URLInfomationHeader.h"
 #import "ASIFormDataRequest.h"
 #import "FileManagerConfig.h"
+
 @interface LoginNetWorkRequest()
 
 
@@ -18,7 +19,7 @@
 @implementation LoginNetWorkRequest
 @synthesize files,request,loginState;
 
-- (void) requestLoginAction:(NSDictionary *) _account
+- (void) requestLoginAction:(NSMutableDictionary *) _account
 {
     @autoreleasepool {
         
@@ -33,13 +34,13 @@
         [mtbDict setValue:@"UTF-8" forKey:@"Charset"];
     
         [request setRequestHeaders:mtbDict];
-    
+        request.delegate = self;
         [request setPostValue:@"dri-login" forKey:@"action"];
         [request setPostValue:[_account objectForKey:@"UserName"] forKey:@"acc"];
         [request setPostValue:[_account objectForKey:@"PassWord"] forKey:@"psd"];
         [request setPostValue:@"0.0.1" forKey:@"dri_version"];
-    
-        [request setCompletionBlock:^(){
+       // [request set]
+        [request setCompletionBlock:^{
             NSArray *cookies = [request responseCookies];
             NSString *JSessionID = nil;
             for (NSHTTPCookie *cookie in cookies) {
@@ -74,19 +75,38 @@
                 NSLog(@"Login Success!");
                 loginState = YES;
                 //  return loginState;
-            } else {
+            } else if(Dict == NULL){
             
-                NSLog(@"Login failed!");
+                NSLog(@"Check Internet Connection!");
+            
+            }else if(response == -1){
+            
+                NSLog(@"Checking Account & Password!");
             
             }
         
         }];
+        
+       
+       // [request setFailedBlock:^{
+            
+          //  NSError *error = [request error];
+            
+        //    NSLog(@”%@”,[error localizedDescription]);
+            
+      //  }];
     [request startAsynchronous];
-
+        NSError *error = [request error];
+        if (!error) {
+            
+            NSLog(@"%@",[error localizedDescription]);
+        }
+        
     //return loginState;
     }
 
 }
+
 
 - (void)checkdeal
 {

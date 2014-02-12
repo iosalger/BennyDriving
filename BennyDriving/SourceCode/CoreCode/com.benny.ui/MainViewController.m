@@ -152,8 +152,8 @@ locationManager
         
     if (!(self.LoginView.isHidden)) {
         NSDictionary *account =  [fileManager readAccountPlist];
-        [self.tfUserName setText:[account objectForKey:@"UserName"]];
-        [self.tfPassWord setText:[account objectForKey:@"PassWord"]];
+        [self.tfUserName setText:[account objectForKey:@"username"]];
+        [self.tfPassWord setText:[account objectForKey:@"password"]];
       }
 
     }
@@ -162,11 +162,16 @@ locationManager
     
     @autoreleasepool {
         
-        NSDictionary *accountDict = [[NSDictionary alloc]init];
-        NSString *userName = self.tfUserName.text;
-        NSString *password = self.tfPassWord.text;
-        [accountDict setValue:userName forKey:@"UserName"];
-        [accountDict setValue:password forKey:@"PassWord"];
+        fileManager = [[FileManagerConfig alloc]init];
+        loginNetWork = [[LoginNetWorkRequest alloc]init];
+        
+        NSMutableDictionary *accountDict = [[NSMutableDictionary alloc]init];
+        [accountDict setObject:self.tfUserName.text forKey:@"UserName"];
+        [accountDict setObject:self.tfPassWord.text forKey:@"PassWord"];
+        
+       // [accountDict setValue:self.tfUserName.text forKey:@"username"];
+        
+       // [accountDict setValue:self.tfPassWord.text forKey:@"password"];
         NSLog(@"%@",accountDict);
         BOOL isSave = [SwitchSvaePassWord isOn];
         if (isSave) {
@@ -177,6 +182,15 @@ locationManager
         
         
     }
+}
+
+-(IBAction)resignTextFiledKeyBoard:(id)sender
+{
+
+    [sender resignFirstResponder];
+    
+    
+
 }
 
 - (IBAction)isLogin:(id)sender {
@@ -191,8 +205,8 @@ locationManager
         [self.LoginView setHidden:NO];
         //[self.LoginView animationDidStart:[CAAnimation ]];
         NSDictionary *accountDict = [fileManager readAccountPlist];
-        self.tfUserName.text = [accountDict objectForKey:@"UserName"];
-        self.tfPassWord.text = [accountDict objectForKey:@"PassWord"];
+        self.tfUserName.text = [accountDict objectForKey:@"username"];
+        self.tfPassWord.text = [accountDict objectForKey:@"password"];
         
     }
     
